@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>Report for esd</description>
+ <original-file/>
+ <generator>drc: script='/home/clyde/Documents/globalfoundries-pdk-libs-gf180mcu_fd_pv/klayout/drc/gf180mcu.drc'</generator>
+ <top-cell>7_11_ESD</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>ESD.1</name>
+   <description>ESD.1 : Minimum width of an ESD implant area. : 0.6µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.2</name>
+   <description>ESD.2 : Minimum space between two ESD implant areas.
+                 (Merge if the space is less than 0.6um). : 0.6µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.3a</name>
+   <description>ESD.3a : Minimum space to NCOMP. : 0.6µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.3b</name>
+   <description>ESD.3b : Min/max space to a butted PCOMP.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.4a</name>
+   <description>ESD.4a : Extension beyond NCOMP. : 0.24µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.4b</name>
+   <description>ESD.4b : Minimum overlap of an ESD implant edge to a COMP. : 0.45µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.5a</name>
+   <description>ESD.5a : Minimum ESD area (um2). : 0.49µm²</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.5b</name>
+   <description>ESD.5b : Minimum field area enclosed by ESD implant (um2). : 0.49µm²</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.6</name>
+   <description>ESD.6 : Extension perpendicular to Poly2 gate. : 0.45µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.7</name>
+   <description>ESD.7 : No ESD implant inside PCOMP.</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.8</name>
+   <description>ESD.8 : Minimum space to Nplus/Pplus. : 0.3µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.pl</name>
+   <description>ESD.pl : Minimum gate length of 5V/6V gate NMOS. : 0.8µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.9</name>
+   <description>ESD.9 : ESD implant layer must be overlapped by Dualgate layer
+                  (as ESD implant option is only for 5V/6V devices).</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ESD.10</name>
+   <description>ESD.10 : LVS_IO shall be drawn covering I/O MOS active area by minimum overlap.</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>7_11_ESD</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+  <cell>
+   <name>7_11_ESD_manual</name>
+   <variant/>
+   <layout-name>7_11_ESD_manual</layout-name>
+   <references>
+    <ref>
+     <parent>7_11_ESD</parent>
+     <trans>m90 *1 -78.001,-0.002</trans>
+    </ref>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'ESD.1'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-26.549,263.002;-27.149,263.002)|(-27.149,263.592;-26.549,263.592)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.2'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-23.719,262.557;-23.719,264.037)|(-24.309,264.037;-24.309,262.557)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.2'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-20.889,263.157;-20.889,264.037)|(-21.479,264.037;-21.479,263.157)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.3a'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-36.074,201.627;-36.074,200.147)/(-35.784,200.387;-35.784,201.387)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.3b'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-26.024,225.167;-26.024,227.137;-24.054,227.137;-24.054,226.067;-23.194,226.067;-23.194,225.167)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.3b'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-31.519,225.377;-31.519,226.927;-29.549,226.927;-29.549,226.077;-28.699,226.077;-28.699,225.377)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.3b'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-21.204,88.632;-21.204,90.602;-19.224,90.602;-19.224,89.552;-18.384,89.552;-18.384,88.632)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.3b'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-28.154,173.007;-28.154,174.557;-26.184,174.557;-26.184,173.707;-25.334,173.707;-25.334,173.007)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.3b'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-29.074,85.967;-29.074,87.937;-27.609,87.937;-27.609,87.337;-27.554,87.337;-27.554,87.252;-27.114,87.252;-27.114,86.877;-26.264,86.877;-26.264,85.967)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.3b'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-33.614,113.422;-33.614,114.972;-31.644,114.972;-31.644,114.122;-30.794,114.122;-30.794,113.422)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.3b'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-33.614,13.612;-33.614,15.162;-31.644,15.162;-31.644,14.312;-30.794,14.312;-30.794,13.612)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.4a'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-38.065,173.247;-38.074,173.247)/(-38.199,173.042;-38.279,173.122)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.4a'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-38.074,173.247;-38.074,173.256)/(-38.199,173.042;-38.279,173.122)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.4a'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-36.314,174.247;-36.314,173.247)/(-36.084,174.316;-36.084,173.178)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.4a'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-30.664,174.247;-30.664,173.247)/(-30.664,174.487;-30.664,173.007)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.4b'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-18.939,173.687;-17.735,173.687)/(-17.829,173.247;-19.033,173.247)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.4b'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-26.184,173.707;-25.48,173.707)/(-25.574,173.267;-26.278,173.267)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.5a'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-50.004,143.777;-50.004,144.477;-49.309,144.477;-49.309,143.777)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.5a'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-38.169,143.877;-38.169,144.477;-37.354,144.477;-37.354,143.877)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.5b'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-43.859,143.777;-43.859,144.477;-43.164,144.477;-43.164,143.777)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.5b'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-32.024,143.877;-32.024,144.477;-31.209,144.477;-31.209,143.877)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.6'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-27.554,87.337;-27.554,87.252)/(-27.554,87.337;-27.554,87.252)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.6'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-27.114,87.252;-27.114,86.877)/(-27.554,87.252;-27.554,86.877)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.7'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-26.024,225.167;-26.024,227.137;-24.054,227.137;-24.054,226.067;-23.194,226.067;-23.194,225.167)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.7'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-31.519,225.377;-31.519,226.927;-29.549,226.927;-29.549,226.077;-28.699,226.077;-28.699,225.377)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.7'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-21.204,88.632;-21.204,90.602;-19.224,90.602;-19.224,89.552;-18.384,89.552;-18.384,88.632)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.7'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-28.154,173.007;-28.154,174.557;-26.184,174.557;-26.184,173.707;-25.334,173.707;-25.334,173.007)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.7'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-29.074,85.967;-29.074,87.937;-27.609,87.937;-27.609,87.337;-27.554,87.337;-27.554,87.252;-27.114,87.252;-27.114,86.877;-26.264,86.877;-26.264,85.967)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.7'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-33.614,113.422;-33.614,114.972;-31.644,114.972;-31.644,114.122;-30.794,114.122;-30.794,113.422)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.7'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-33.614,13.612;-33.614,15.162;-31.644,15.162;-31.644,14.312;-30.794,14.312;-30.794,13.612)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.8'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-27.469,13.387;-27.584,13.622;-25.324,13.622;-25.159,13.387)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.8'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-19.494,13.177;-19.68,13.412;-16.899,13.412;-16.714,13.177)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.8'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-33.189,60.377;-33.484,60.432;-33.484,60.732;-33.189,60.677)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.8'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-35.634,59.052;-35.749,59.277;-33.189,59.277;-33.324,59.052)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.pl'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-26.864,59.517;-26.864,60.517)/(-26.269,60.517;-26.269,59.517)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.9'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-44.809,30.572;-44.809,34.542;-39.854,34.542;-39.854,30.572)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.10'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-32.094,13.852;-32.094,14.922;-31.644,14.922;-31.644,14.312;-31.034,14.312;-31.034,13.852)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'ESD.10'</category>
+   <cell>7_11_ESD_manual</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-33.374,13.852;-33.374,14.922;-32.894,14.922;-32.894,13.852)</value>
+   </values>
+  </item>
+ </items>
+</report-database>

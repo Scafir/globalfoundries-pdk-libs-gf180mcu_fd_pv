@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>Report for dummy_exclude</description>
+ <original-file/>
+ <generator>drc: script='/home/clyde/Documents/globalfoundries-pdk-libs-gf180mcu_fd_pv/klayout/drc/gf180mcu.drc'</generator>
+ <top-cell>10_8_DE</top-cell>
+ <tags>
+ </tags>
+ <categories>
+  <category>
+   <name>DE.2</name>
+   <description>DE.2 : Minimum NDMY or PMNDMY size (x or y dimension in um) : 0.8µm</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DE.3</name>
+   <description>DE.3 : Maximum NDMY size (um2): 15000 um2.
+                If size greater than 15000 um2 then two sides should not be greater than (80 um).</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>DE.4</name>
+   <description>DE.4 : Minimum NDMY to NDMY space (Merge if space is less) : 20µm</description>
+   <categories>
+   </categories>
+  </category>
+ </categories>
+ <cells>
+  <cell>
+   <name>10_8_DE</name>
+   <variant/>
+   <layout-name/>
+   <references>
+   </references>
+  </cell>
+  <cell>
+   <name>NDMY_PMNDMY</name>
+   <variant/>
+   <layout-name>NDMY_PMNDMY</layout-name>
+   <references>
+    <ref>
+     <parent>10_8_DE</parent>
+     <trans>m90 *1 -201.091,177.254</trans>
+    </ref>
+   </references>
+  </cell>
+ </cells>
+ <items>
+  <item>
+   <tags/>
+   <category>'DE.2'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-56.84,82.88;-56.84,87.875)|(-56.045,87.875;-56.045,82.88)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.2'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-88.116,82.88;-88.205,82.88)|(-88.205,83.675;-88.2,83.68)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.3'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge: (-193.51,-64.006;-193.51,15.999)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.3'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge: (-193.51,15.999;-6.01,15.999)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.3'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge: (-6.01,15.999;-6.01,-64.006)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.3'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge: (-6.01,-64.006;-193.51,-64.006)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.3'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge: (-193.51,-64.006;-193.51,15.999)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.3'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge: (-193.51,15.999;-6.01,15.999)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.3'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge: (-6.01,15.999;-6.01,-64.006)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.3'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge: (-6.01,-64.006;-193.51,-64.006)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.4'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-66.42,43.52;-65.695,42.795)|(-51.92,57.295;-51.92,57.304)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.4'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-31.47,44.605;-31.462,44.605)|(-46.92,57.295;-46.928,57.295)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.4'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-66.42,43.52;-65.695,42.795)|(-51.911,57.295;-51.92,57.295)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DE.4'</category>
+   <cell>NDMY_PMNDMY</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-31.47,44.595;-31.47,44.605)|(-46.92,57.305;-46.92,57.295)</value>
+   </values>
+  </item>
+ </items>
+</report-database>
