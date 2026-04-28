@@ -132,7 +132,9 @@ def _parse_lyrdb(lyrdb_path: str) -> LyrdbData:
             if values_el is not None:
                 for value_el in values_el:
                     if value_el.text:
-                        polygons.append(value_el.text.strip())
+                        v = value_el.text.strip()
+                        if v.startswith(("polygon:", "edge-pair:", "edge:")):
+                            polygons.append(v)
 
             data[cell_name][rule_name].extend(polygons)
 
