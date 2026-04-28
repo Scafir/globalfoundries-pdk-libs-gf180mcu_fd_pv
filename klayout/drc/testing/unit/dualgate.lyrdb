@@ -2,7 +2,7 @@
 <report-database>
  <description>Report for dualgate</description>
  <original-file/>
- <generator>drc: script='/home/clyde/Documents/globalfoundries-pdk-libs-gf180mcu_fd_pv/klayout/drc/gf180mcu.drc'</generator>
+ <generator>drc: script='/home/claforge/Documents/globalfoundries-pdk-libs-gf180mcu_fd_pv/klayout/drc/gf180mcu.drc'</generator>
  <top-cell>7_6_Dualgate</top-cell>
  <tags>
  </tags>
@@ -75,19 +75,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-227.301,120.682;-227.703,120.99;-227.602,121.091;-227.294,120.689;-227.301,120.689)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'DV.1'</category>
-   <cell>7_6_Dualgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-217.771,120.482;-218.173,120.79;-217.872,121.091;-217.564,120.689;-217.572,120.689;-217.771,120.49)</value>
+    <value>polygon: (-245.957,118.12;-245.957,120.035;-245.792,120.035;-245.792,118.12)</value>
    </values>
   </item>
   <item>
@@ -123,7 +111,19 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-245.957,118.12;-245.957,120.035;-245.792,120.035;-245.792,118.12)</value>
+    <value>polygon: (-227.301,120.682;-227.703,120.99;-227.602,121.091;-227.294,120.689;-227.301,120.689)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DV.1'</category>
+   <cell>7_6_Dualgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-217.771,120.482;-218.173,120.79;-217.872,121.091;-217.564,120.689;-217.572,120.689;-217.771,120.49)</value>
    </values>
   </item>
   <item>
@@ -147,7 +147,7 @@
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-237.186,105.525;-237.182,105.525)|(-236.843,105.805;-236.847,105.805)</value>
+    <value>edge-pair: (-248.032,103.804;-248.032,105.525)|(-248.467,105.591;-248.467,103.87)</value>
    </values>
   </item>
   <item>
@@ -171,7 +171,7 @@
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-248.032,103.804;-248.032,105.525)|(-248.467,105.591;-248.467,103.87)</value>
+    <value>edge-pair: (-237.186,105.525;-237.182,105.525)|(-236.843,105.805;-236.847,105.805)</value>
    </values>
   </item>
   <item>
@@ -183,7 +183,7 @@
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-246.907,90.99;-246.907,88.14)/(-246.907,88.38;-246.907,91.23)</value>
+    <value>edge-pair: (-225.372,88.035;-225.372,87.795)/(-225.372,88.035;-225.372,88.275)</value>
    </values>
   </item>
   <item>
@@ -207,7 +207,7 @@
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-246.907,85.99;-247.716,85.99)/(-247.667,85.755;-246.858,85.755)</value>
+    <value>edge-pair: (-246.907,90.99;-246.907,88.14)/(-246.907,88.38;-246.907,91.23)</value>
    </values>
   </item>
   <item>
@@ -231,7 +231,19 @@
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-225.372,88.035;-225.372,87.795)/(-225.372,88.035;-225.372,88.275)</value>
+    <value>edge-pair: (-246.907,85.99;-247.716,85.99)/(-247.667,85.755;-246.858,85.755)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DV.5'</category>
+   <cell>7_6_Dualgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (-346.395,10.93;-346.395,12.53)|(-345.795,12.53;-345.795,10.93)</value>
    </values>
   </item>
   <item>
@@ -291,6 +303,18 @@
    <comment/>
    <image/>
    <values>
+    <value>edge-pair: (-241.067,70.51;-241.067,73.425)|(-240.372,73.425;-240.372,70.51)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DV.5'</category>
+   <cell>7_6_Dualgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
     <value>edge-pair: (-234.942,71.175;-235.082,71.035)|(-235.512,71.595;-235.502,71.595)</value>
    </values>
   </item>
@@ -308,30 +332,6 @@
   </item>
   <item>
    <tags/>
-   <category>'DV.5'</category>
-   <cell>7_6_Dualgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-346.395,10.93;-346.395,12.53)|(-345.795,12.53;-345.795,10.93)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'DV.5'</category>
-   <cell>7_6_Dualgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-241.067,70.51;-241.067,73.425)|(-240.372,73.425;-240.372,70.51)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
    <category>'DV.6'</category>
    <cell>7_6_Dualgate</cell>
    <visited>false</visited>
@@ -339,31 +339,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-222.291,62.03;-222.498,62.165;-222.217,62.446;-222.082,62.239;-222.092,62.239;-222.291,62.04)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'DV.6'</category>
-   <cell>7_6_Dualgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-231.821,62.23;-232.028,62.365;-231.947,62.446;-231.812,62.239;-231.821,62.239)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'DV.6'</category>
-   <cell>7_6_Dualgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-205.588,59.27;-205.83,59.37;-205.63,59.57;-205.63,62.371;-205.588,62.608)</value>
+    <value>polygon: (-250.782,59.67;-250.782,61.585;-250.702,61.585;-250.702,59.67)</value>
    </values>
   </item>
   <item>
@@ -387,7 +363,31 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-250.782,59.67;-250.782,61.585;-250.702,61.585;-250.702,59.67)</value>
+    <value>polygon: (-231.821,62.23;-232.028,62.365;-231.947,62.446;-231.812,62.239;-231.821,62.239)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DV.6'</category>
+   <cell>7_6_Dualgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-222.291,62.03;-222.498,62.165;-222.217,62.446;-222.082,62.239;-222.092,62.239;-222.291,62.04)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DV.6'</category>
+   <cell>7_6_Dualgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-205.588,59.27;-205.83,59.37;-205.63,59.57;-205.63,62.371;-205.588,62.608)</value>
    </values>
   </item>
   <item>
@@ -411,79 +411,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-373.394,12.763;-373.796,12.93;-372.995,13.731;-372.828,13.329;-373.394,13.329)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'DV.8'</category>
-   <cell>7_6_Dualgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-359.594,12.914;-359.934,13.143;-359.409,13.668;-359.18,13.328;-359.195,13.328;-359.594,12.929)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'DV.8'</category>
-   <cell>7_6_Dualgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-399.454,10.929;-399.391,11.324;-399.786,11.261;-399.786,13.389;-399.391,13.326;-399.454,13.721;-398.326,13.721;-398.389,13.326;-397.994,13.389;-397.994,11.261;-398.389,11.324;-398.326,10.929/-399.389,11.326;-398.391,11.326;-398.391,13.324;-399.389,13.324)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'DV.8'</category>
-   <cell>7_6_Dualgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-380.194,13.315;-380.534,13.544;-380.409,13.669;-380.18,13.329;-380.194,13.329)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'DV.8'</category>
-   <cell>7_6_Dualgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-385.596,10.929;-385.596,13.731;-385.594,13.331;-385.594,11.329)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'DV.8'</category>
-   <cell>7_6_Dualgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-386.594,10.929;-386.596,11.329;-386.596,13.331;-386.594,13.731)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'DV.8'</category>
-   <cell>7_6_Dualgate</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (-366.495,11.429;-366.495,13.429;-365.495,13.429;-365.495,11.429)</value>
+    <value>polygon: (-346.595,10.73;-346.595,12.73;-345.595,12.73;-345.595,10.73/-346.395,10.93;-345.795,10.93;-345.795,12.53;-346.395,12.53)</value>
    </values>
   </item>
   <item>
@@ -507,7 +435,79 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-346.595,10.73;-346.595,12.73;-345.595,12.73;-345.595,10.73/-346.395,10.93;-345.795,10.93;-345.795,12.53;-346.395,12.53)</value>
+    <value>polygon: (-366.495,11.429;-366.495,13.429;-365.495,13.429;-365.495,11.429)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DV.8'</category>
+   <cell>7_6_Dualgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-359.594,12.914;-359.934,13.143;-359.409,13.668;-359.18,13.328;-359.195,13.328;-359.594,12.929)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DV.8'</category>
+   <cell>7_6_Dualgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-380.194,13.315;-380.534,13.544;-380.409,13.669;-380.18,13.329;-380.194,13.329)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DV.8'</category>
+   <cell>7_6_Dualgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-399.454,10.929;-399.391,11.324;-399.786,11.261;-399.786,13.389;-399.391,13.326;-399.454,13.721;-398.326,13.721;-398.389,13.326;-397.994,13.389;-397.994,11.261;-398.389,11.324;-398.326,10.929/-399.389,11.326;-398.391,11.326;-398.391,13.324;-399.389,13.324)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DV.8'</category>
+   <cell>7_6_Dualgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-386.594,10.929;-386.596,11.329;-386.596,13.331;-386.594,13.731)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DV.8'</category>
+   <cell>7_6_Dualgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-385.596,10.929;-385.596,13.731;-385.594,13.331;-385.594,11.329)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'DV.8'</category>
+   <cell>7_6_Dualgate</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (-373.394,12.763;-373.796,12.93;-372.995,13.731;-372.828,13.329;-373.394,13.329)</value>
    </values>
   </item>
   <item>

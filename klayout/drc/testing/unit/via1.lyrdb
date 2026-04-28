@@ -2,7 +2,7 @@
 <report-database>
  <description>Report for via1</description>
  <original-file/>
- <generator>drc: script='/home/clyde/Documents/globalfoundries-pdk-libs-gf180mcu_fd_pv/klayout/drc/gf180mcu.drc'</generator>
+ <generator>drc: script='/home/claforge/Documents/globalfoundries-pdk-libs-gf180mcu_fd_pv/klayout/drc/gf180mcu.drc'</generator>
  <top-cell>7_14_VIA</top-cell>
  <tags>
  </tags>
@@ -83,6 +83,18 @@
    <comment/>
    <image/>
    <values>
+    <value>edge: (207.54,61.81;207.885,61.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.1'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
     <value>edge: (205.84,61.81;206.095,61.81)</value>
    </values>
   </item>
@@ -108,18 +120,6 @@
    <image/>
    <values>
     <value>edge: (206.095,61.55;205.84,61.55)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.1'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge: (207.54,61.81;207.885,61.81)</value>
    </values>
   </item>
   <item>
@@ -155,7 +155,7 @@
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (208.32,52.68;208.32,52.94)|(208.065,52.94;208.065,52.68)</value>
+    <value>edge-pair: (211.055,51.445;210.795,51.445)|(211.055,51.445;211.315,51.445)</value>
    </values>
   </item>
   <item>
@@ -179,19 +179,7 @@
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (211.055,51.445;210.795,51.445)|(211.055,51.445;211.315,51.445)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.2b'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (55.669,106.734;55.929,106.734)|(55.929,107.093;55.669,107.093)</value>
+    <value>edge-pair: (208.32,52.68;208.32,52.94)|(208.065,52.94;208.065,52.68)</value>
    </values>
   </item>
   <item>
@@ -239,6 +227,18 @@
    <comment/>
    <image/>
    <values>
+    <value>edge-pair: (55.669,106.734;55.929,106.734)|(55.929,107.093;55.669,107.093)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.2b'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
     <value>edge-pair: (62.028,108.334;62.028,108.594)|(61.669,108.594;61.669,108.334)</value>
    </values>
   </item>
@@ -275,31 +275,19 @@
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (48.069,108.334;48.069,108.594)|(47.71,108.594;47.71,108.334)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.2b'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (43.569,107.714;43.569,107.974)|(43.21,107.974;43.21,107.714)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.2b'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
     <value>edge-pair: (48.069,107.094;48.069,107.354)|(47.71,107.354;47.71,107.094)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.2b'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (48.069,108.334;48.069,108.594)|(47.71,108.594;47.71,108.334)</value>
    </values>
   </item>
   <item>
@@ -323,7 +311,7 @@
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (43.569,106.474;43.569,106.734)|(43.21,106.734;43.21,106.474)</value>
+    <value>edge-pair: (43.569,107.714;43.569,107.974)|(43.21,107.974;43.21,107.714)</value>
    </values>
   </item>
   <item>
@@ -372,6 +360,18 @@
    <image/>
    <values>
     <value>edge-pair: (43.569,108.334;43.569,108.594)|(43.21,108.594;43.21,108.334)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.2b'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (43.569,106.474;43.569,106.734)|(43.21,106.734;43.21,106.474)</value>
    </values>
   </item>
   <item>
@@ -467,7 +467,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (222.775,33.505;222.665,33.615;222.775,33.615)</value>
+    <value>polygon: (218.87,33.355;218.87,33.615;219.13,33.615;219.13,33.355)</value>
    </values>
   </item>
   <item>
@@ -491,7 +491,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (218.87,33.355;218.87,33.615;219.13,33.615;219.13,33.355)</value>
+    <value>polygon: (222.775,33.505;222.665,33.615;222.775,33.615)</value>
    </values>
   </item>
   <item>
@@ -527,102 +527,6 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (226.575,29.34;226.575,29.395;226.335,29.395;226.335,29.655;226.595,29.655;226.595,29.34)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3d'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (223.825,29.69;223.825,29.745;224.085,29.745;224.085,29.69)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3d'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (221.515,29.73;221.515,29.785;221.775,29.785;221.775,29.73)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3d'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (219.685,29.745;219.685,30.005;219.74,30.005;219.74,29.745)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3d'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (218.255,29.735;218.255,29.775;218.515,29.775;218.515,29.735)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3d'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (218.895,29.735;218.895,29.995;218.95,29.995;218.95,29.735)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3d'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (225.44,29.465;225.44,29.515;225.47,29.515;225.47,29.465)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3d'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (223,29.345;223,29.4;223.26,29.4;223.26,29.345)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3d'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
     <value>polygon: (222.215,29.075;222.215,29.13;222.475,29.13;222.475,29.075)</value>
    </values>
   </item>
@@ -647,7 +551,91 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (226.245,33.355;226.245,33.615;226.505,33.615;226.505,33.355)</value>
+    <value>polygon: (223,29.345;223,29.4;223.26,29.4;223.26,29.345)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.3d'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (225.44,29.465;225.44,29.515;225.47,29.515;225.47,29.465)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.3d'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (226.575,29.34;226.575,29.395;226.335,29.395;226.335,29.655;226.595,29.655;226.595,29.34)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.3d'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (223.825,29.69;223.825,29.745;224.085,29.745;224.085,29.69)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.3d'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (218.255,29.735;218.255,29.775;218.515,29.775;218.515,29.735)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.3d'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (221.515,29.73;221.515,29.785;221.775,29.785;221.775,29.73)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.3d'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (218.895,29.735;218.895,29.995;218.95,29.995;218.95,29.735)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.3d'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (219.685,29.745;219.685,30.005;219.74,30.005;219.74,29.745)</value>
    </values>
   </item>
   <item>
@@ -671,18 +659,6 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (224.725,33.355;224.725,33.615;224.985,33.615;224.985,33.355)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.3d'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
     <value>polygon: (222.515,33.355;222.515,33.615;222.775,33.615;222.775,33.355)</value>
    </values>
   </item>
@@ -695,7 +671,55 @@
    <comment/>
    <image/>
    <values>
+    <value>polygon: (224.725,33.355;224.725,33.615;224.985,33.615;224.985,33.355)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.3d'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (226.245,33.355;226.245,33.615;226.505,33.615;226.505,33.355)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.3d'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
     <value>polygon: (216.805,33.645;216.805,33.905;217.065,33.905;217.065,33.645)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.4a'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (218.87,9.685;218.87,9.945;219.13,9.945;219.13,9.685)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.4a'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (220.46,9.84;220.46,9.945;220.72,9.945;220.72,9.84)</value>
    </values>
   </item>
   <item>
@@ -748,30 +772,6 @@
   </item>
   <item>
    <tags/>
-   <category>'V1.4a'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (220.46,9.84;220.46,9.945;220.72,9.945;220.72,9.84)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.4a'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (218.87,9.685;218.87,9.945;219.13,9.945;219.13,9.685)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
    <category>'V1.4b'</category>
    <cell>7_14_VIA</cell>
    <visited>false</visited>
@@ -803,79 +803,7 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (223.825,6.02;223.825,6.075;224.085,6.075;224.085,6.02)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.4c'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (221.515,6.06;221.515,6.115;221.775,6.115;221.775,6.06)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.4c'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (219.685,6.075;219.685,6.335;219.74,6.335;219.74,6.075)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.4c'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (218.895,6.075;218.895,6.335;218.95,6.335;218.95,6.075)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.4c'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (218.255,6.065;218.255,6.105;218.515,6.105;218.515,6.065)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.4c'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (225.44,5.795;225.44,5.845;225.465,5.845;225.465,5.795)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.4c'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (223,5.675;223,5.73;223.26,5.73;223.26,5.675)</value>
+    <value>polygon: (222.215,5.405;222.215,5.46;222.475,5.46;222.475,5.405)</value>
    </values>
   </item>
   <item>
@@ -899,18 +827,6 @@
    <comment/>
    <image/>
    <values>
-    <value>polygon: (222.215,5.405;222.215,5.46;222.475,5.46;222.475,5.405)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.4c'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
     <value>polygon: (228.125,5.445;228.125,5.705;228.18,5.705;228.18,5.445)</value>
    </values>
   </item>
@@ -923,7 +839,103 @@
    <comment/>
    <image/>
    <values>
+    <value>polygon: (223,5.675;223,5.73;223.26,5.73;223.26,5.675)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.4c'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (225.44,5.795;225.44,5.845;225.465,5.845;225.465,5.795)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.4c'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (223.825,6.02;223.825,6.075;224.085,6.075;224.085,6.02)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.4c'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (218.255,6.065;218.255,6.105;218.515,6.105;218.515,6.065)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.4c'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (221.515,6.06;221.515,6.115;221.775,6.115;221.775,6.06)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.4c'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (218.895,6.075;218.895,6.335;218.95,6.335;218.95,6.075)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.4c'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (219.685,6.075;219.685,6.335;219.74,6.335;219.74,6.075)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.4c'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
     <value>polygon: (224.69,6.075;224.69,6.335;224.95,6.335;224.95,6.075)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'V1.4c'</category>
+   <cell>7_14_VIA</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>polygon: (227.505,9.675;227.505,9.935;227.765,9.935;227.765,9.675)</value>
    </values>
   </item>
   <item>
@@ -960,18 +972,6 @@
    <image/>
    <values>
     <value>polygon: (226.245,9.685;226.245,9.945;226.505,9.945;226.505,9.685)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'V1.4c'</category>
-   <cell>7_14_VIA</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>polygon: (227.505,9.675;227.505,9.935;227.765,9.935;227.765,9.675)</value>
    </values>
   </item>
  </items>

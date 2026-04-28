@@ -2,7 +2,7 @@
 <report-database>
  <description>Report for dummy_exclude</description>
  <original-file/>
- <generator>drc: script='/home/clyde/Documents/globalfoundries-pdk-libs-gf180mcu_fd_pv/klayout/drc/gf180mcu.drc'</generator>
+ <generator>drc: script='/home/claforge/Documents/globalfoundries-pdk-libs-gf180mcu_fd_pv/klayout/drc/gf180mcu.drc'</generator>
  <top-cell>10_8_DE</top-cell>
  <tags>
  </tags>
@@ -35,185 +35,174 @@
    <references>
    </references>
   </cell>
-  <cell>
-   <name>NDMY_PMNDMY</name>
-   <variant/>
-   <layout-name>NDMY_PMNDMY</layout-name>
-   <references>
-    <ref>
-     <parent>10_8_DE</parent>
-     <trans>m90 *1 -201.091,177.254</trans>
-    </ref>
-   </references>
-  </cell>
  </cells>
  <items>
   <item>
    <tags/>
    <category>'DE.2'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-56.84,82.88;-56.84,87.875)|(-56.045,87.875;-56.045,82.88)</value>
+    <value>edge-pair: (-112.886,260.134;-112.975,260.134)|(-112.891,260.934;-112.886,260.929)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.2'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-88.116,82.88;-88.205,82.88)|(-88.205,83.675;-88.2,83.68)</value>
+    <value>edge-pair: (-145.046,260.134;-145.046,265.129)|(-144.251,265.129;-144.251,260.134)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.3'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge: (-193.51,-64.006;-193.51,15.999)</value>
+    <value>edge: (-195.081,113.248;-195.081,193.253)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.3'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge: (-193.51,15.999;-6.01,15.999)</value>
+    <value>edge: (-195.081,193.253;-7.581,193.253)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.3'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge: (-6.01,15.999;-6.01,-64.006)</value>
+    <value>edge: (-7.581,193.253;-7.581,113.248)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.3'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge: (-6.01,-64.006;-193.51,-64.006)</value>
+    <value>edge: (-7.581,113.248;-195.081,113.248)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.3'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge: (-193.51,-64.006;-193.51,15.999)</value>
+    <value>edge: (-195.081,113.248;-195.081,193.253)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.3'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge: (-193.51,15.999;-6.01,15.999)</value>
+    <value>edge: (-195.081,193.253;-7.581,193.253)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.3'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge: (-6.01,15.999;-6.01,-64.006)</value>
+    <value>edge: (-7.581,193.253;-7.581,113.248)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.3'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge: (-6.01,-64.006;-193.51,-64.006)</value>
+    <value>edge: (-7.581,113.248;-195.081,113.248)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.4'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-66.42,43.52;-65.695,42.795)|(-51.92,57.295;-51.92,57.304)</value>
+    <value>edge-pair: (-169.621,221.859;-169.621,221.849)|(-154.171,234.549;-154.171,234.559)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.4'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-31.47,44.605;-31.462,44.605)|(-46.92,57.295;-46.928,57.295)</value>
+    <value>edge-pair: (-169.629,221.859;-169.621,221.859)|(-154.163,234.549;-154.171,234.549)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.4'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-66.42,43.52;-65.695,42.795)|(-51.911,57.295;-51.92,57.295)</value>
+    <value>edge-pair: (-135.396,220.049;-134.671,220.774)|(-149.171,234.558;-149.171,234.549)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'DE.4'</category>
-   <cell>NDMY_PMNDMY</cell>
+   <cell>10_8_DE</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>edge-pair: (-31.47,44.595;-31.47,44.605)|(-46.92,57.305;-46.92,57.295)</value>
+    <value>edge-pair: (-135.396,220.049;-134.671,220.774)|(-149.171,234.549;-149.18,234.549)</value>
    </values>
   </item>
  </items>
