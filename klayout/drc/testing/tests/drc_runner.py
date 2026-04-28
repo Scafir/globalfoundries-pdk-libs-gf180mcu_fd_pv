@@ -30,7 +30,7 @@ import yaml
 
 default_switches: Dict[str, str] = {
     "variant": "C",
-    "run_mode": "deep",
+    "run_mode": "flat",
 }
 
 
@@ -71,46 +71,126 @@ class DRCTestCase:
 # Result parsing
 # ---------------------------------------------------------------------------
 
+# Type alias: cell -> rule -> sorted tuple of polygon value strings
+LyrdbData = Dict[str, Dict[str, List[str]]]
 
-def _parse_lyrdb(lyrdb_path: str) -> Dict[str, int]:
+
+def _parse_lyrdb(lyrdb_path: str) -> LyrdbData:
     """
-    Parse a KLayout .lyrdb and return {rule_name: violation_count}.
+    Parse a KLayout .lyrdb and return a nested structure::
 
-    Rules that ran but produced zero violations are included with count 0.
+        {
+            cell_name: {
+                rule_name: [polygon_value, ...],   # sorted, order-independent
+                ...
+            },
+            ...
+        }
+
+    Rules that ran but produced zero violations appear with an empty list.
+    The top-level cell recorded in <categories> is used as a sentinel so
+    zero-violation rules are still visible in the diff.
     """
     tree = ET.parse(lyrdb_path)
     root = tree.getroot()
 
-    rule_counts: Dict[str, int] = defaultdict(int)
+    # Collect all rule names that ran (may have zero violations)
+    all_rules: List[str] = []
+    for category in root.find("categories"):
+        name_el = category.find("name")
+        if name_el is not None and name_el.text:
+            all_rules.append(name_el.text.strip())
 
-    for category in root[5]:            # categories — all rules that ran
-        rule_name = category[0].text
-        if rule_name is not None:
-            rule_counts[rule_name] = 0
+    # Top cell name — used as the cell for zero-violation rules
+    top_cell_el = root.find("top-cell")
+    top_cell = top_cell_el.text.strip() if top_cell_el is not None and top_cell_el.text else "__top__"
 
-    for item in root[7]:                # items — individual violations
-        rule_name = item[1].text
-        if rule_name is not None:
-            rule_counts[rule_name.replace("'", "")] += 1
+    # Seed every rule with an empty list under the top cell
+    data: LyrdbData = defaultdict(lambda: defaultdict(list))
+    for rule in all_rules:
+        data[top_cell][rule]  # touch to ensure the key exists
 
-    return dict(rule_counts)
+    # Fill in actual violations
+    items_el = root.find("items")
+    if items_el is not None:
+        for item in items_el:
+            rule_el  = item.find("category")
+            cell_el  = item.find("cell")
+            values_el = item.find("values")
+
+            if rule_el is None or rule_el.text is None:
+                continue
+
+            rule_name = rule_el.text.strip().replace("'", "")
+            cell_name = (
+                cell_el.text.strip()
+                if cell_el is not None and cell_el.text
+                else top_cell
+            )
+
+            polygons: List[str] = []
+            if values_el is not None:
+                for value_el in values_el:
+                    if value_el.text:
+                        polygons.append(value_el.text.strip())
+
+            data[cell_name][rule_name].extend(polygons)
+
+    # Sort polygon lists so comparison is order-independent
+    for cell in data:
+        for rule in data[cell]:
+            data[cell][rule].sort()
+
+    return {cell: dict(rules) for cell, rules in data.items()}
 
 
-def _diff_lyrdb(actual: Dict[str, int], golden: Dict[str, int]) -> List[str]:
+def _diff_lyrdb(actual: LyrdbData, golden: LyrdbData) -> List[str]:
     """
-    Return a list of human-readable differences between two rule-count dicts.
-    An empty list means the databases are equivalent.
+    Compare two parsed lyrdb structures at the polygon level.
+
+    Checks per (cell, rule):
+      - rules present in one report but not the other
+      - one-to-one polygon match (order-independent)
+
+    Returns a list of human-readable difference strings; empty means identical.
     """
     diffs: List[str] = []
-    for rule in sorted(set(actual) | set(golden)):
-        a = actual.get(rule)
-        g = golden.get(rule)
-        if a is None:
-            diffs.append(f"  {rule}: missing in output (golden={g})")
-        elif g is None:
-            diffs.append(f"  {rule}: unexpected in output (count={a})")
-        elif a != g:
-            diffs.append(f"  {rule}: count {a} != golden {g}")
+
+    all_cells = sorted(set(actual) | set(golden))
+    for cell in all_cells:
+        if cell not in actual:
+            rules = sorted(golden[cell])
+            diffs.append(f"[{cell}] cell missing in output (golden has {len(rules)} rule(s): {', '.join(rules)})")
+            continue
+        if cell not in golden:
+            rules = sorted(actual[cell])
+            diffs.append(f"[{cell}] unexpected cell in output ({len(rules)} rule(s): {', '.join(rules)})")
+            continue
+
+        all_rules = sorted(set(actual[cell]) | set(golden[cell]))
+        for rule in all_rules:
+            a_polys = actual[cell].get(rule)
+            g_polys = golden[cell].get(rule)
+
+            if a_polys is None:
+                diffs.append(f"[{cell}][{rule}] rule missing in output (golden has {len(g_polys)} violation(s))")
+            elif g_polys is None:
+                diffs.append(f"[{cell}][{rule}] unexpected rule in output ({len(a_polys)} violation(s))")
+            elif a_polys != g_polys:
+                # Both exist — report count mismatch and differing polygons
+                a_set = set(a_polys)
+                g_set = set(g_polys)
+                only_in_actual = sorted(a_set - g_set)
+                only_in_golden = sorted(g_set - a_set)
+                diffs.append(
+                    f"[{cell}][{rule}] violation mismatch "
+                    f"(actual={len(a_polys)}, golden={len(g_polys)})"
+                )
+                for p in only_in_golden:
+                    diffs.append(f"    missing in output : {p}")
+                for p in only_in_actual:
+                    diffs.append(f"    unexpected in output: {p}")
+
     return diffs
 
 
