@@ -274,7 +274,7 @@ GF180_DRC_REGISTRY.register(id: 'via3_v3_3d', path: __FILE__, priority: 15, tags
   next unless ctx.metal_level_numerical > 3
 
   logger.info('Executing rule V3.3d')
-  via_rule_3d(via: via3, idx: 3, name: 'via3', lower_metal: metal4)
+  via_rule_3d(via: via3, idx: 3, name: 'via3', lower_metal: metal3)
 end
 GF180_DRC_REGISTRY.register(id: 'via3_v3_4a', path: __FILE__, priority: 15, tags: %w[beol via3]) do
   next unless ctx.metal_level_numerical > 3
