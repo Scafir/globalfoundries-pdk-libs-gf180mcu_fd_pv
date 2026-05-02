@@ -662,16 +662,27 @@ end
 
 isosub = get_polygons(23, 5)
 
-# Ideally, no sizing should happen and the default_sub should not be
-# short polygons that touches it. However, raw mecanism work on layers and
-# not for specific shapes (we want touching isosub polygons to be shorted).
-# In order for the default_sub and isobsub polygons to
-# not be shorted, one can upsize the isosub by a db unit when calculating
-# isosub. This create the secondary effect that default_sub regions separated by
-# a strip of database unit width would not be considered as the same net.
-default_sub = layout_border - isosub.sized(source.layout.dbu)
-sub = isosub
-sub = sub + default_sub
+# Awful hack to generate a hierachical cell boundary layer
+BBOX_LAYER = 999
+BBOX_DTYPE = 0
+
+bbox_li = source.layout.layer(RBA::LayerInfo.new(BBOX_LAYER, BBOX_DTYPE, "BBOX_TEMP"))
+
+source.layout.each_cell do |cell|
+  bbox = cell.bbox
+  next if bbox.empty?
+  cell.clear(bbox_li)
+  cell.shapes(bbox_li).insert(bbox.enlarged(1, 1))
+end
+
+bbox_layer = input(BBOX_LAYER, BBOX_DTYPE)
+
+isosub_sized = isosub.sized(-source.layout.dbu)
+isosub_hierarchical = isosub & isosub_sized
+
+default_sub = bbox_layer - isosub
+
+sub = isosub_hierarchical + default_sub
 count = sub.count
 logger.info("sub has #{count} polygons")
 polygons_count += count
